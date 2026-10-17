@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Generated (rebuild with `python -m src.train`)
+outputs/checkpoints/
+*.pt
+*.pth
+
+# Local only
+.env
+
+# Downloaded benchmark data (fetched by src/benchmarks.py)
+data/downloads/

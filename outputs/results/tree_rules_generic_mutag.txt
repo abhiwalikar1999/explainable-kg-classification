@@ -1,0 +1,46 @@
+|--- hasAtom/type=Carbon-10 <= 4.50
+|   |--- hasStructure/type=Six_ring <= 3.50
+|   |   |--- hasStructure/type=Five_ring <= 0.50
+|   |   |   |--- hasStructure/type=Alcohol <= 0.50
+|   |   |   |   |--- hasStructure/type=Alkyl_halide <= 0.50
+|   |   |   |   |   |--- class: not mutagenic
+|   |   |   |   |--- hasStructure/type=Alkyl_halide >  0.50
+|   |   |   |   |   |--- class: not mutagenic
+|   |   |   |--- hasStructure/type=Alcohol >  0.50
+|   |   |   |   |--- hasStructure:count <= 9.50
+|   |   |   |   |   |--- class: not mutagenic
+|   |   |   |   |--- hasStructure:count >  9.50
+|   |   |   |   |   |--- class: mutagenic
+|   |   |--- hasStructure/type=Five_ring >  0.50
+|   |   |   |--- hasAtom/type=Carbon-22 <= 2.00
+|   |   |   |   |--- hasStructure/type=Non_ar_hetero_6_ring <= 0.50
+|   |   |   |   |   |--- class: mutagenic
+|   |   |   |   |--- hasStructure/type=Non_ar_hetero_6_ring >  0.50
+|   |   |   |   |   |--- class: mutagenic
+|   |   |   |--- hasAtom/type=Carbon-22 >  2.00
+|   |   |   |   |--- hasAtom:count <= 21.50
+|   |   |   |   |   |--- class: not mutagenic
+|   |   |   |   |--- hasAtom:count >  21.50
+|   |   |   |   |   |--- class: not mutagenic
+|   |--- hasStructure/type=Six_ring >  3.50
+|   |   |--- class: mutagenic
+|--- hasAtom/type=Carbon-10 >  4.50
+|   |--- hasStructure:count <= 13.50
+|   |   |--- cytogen_ca=false <= 0.50
+|   |   |   |--- hasStructure/type=Methyl <= 1.50
+|   |   |   |   |--- class: mutagenic
+|   |   |   |--- hasStructure/type=Methyl >  1.50
+|   |   |   |   |--- hasAtom:count <= 31.00
+|   |   |   |   |   |--- class: not mutagenic
+|   |   |   |   |--- hasAtom:count >  31.00
+|   |   |   |   |   |--- class: not mutagenic
+|   |   |--- cytogen_ca=false >  0.50
+|   |   |   |--- hasAtom/type=Carbon-10 <= 5.50
+|   |   |   |   |--- class: not mutagenic
+|   |   |   |--- hasAtom/type=Carbon-10 >  5.50
+|   |   |   |   |--- class: mutagenic
+|   |--- hasStructure:count >  13.50
+|   |   |--- hasStructure/type=Alcohol <= 3.50
+|   |   |   |--- class: mutagenic
+|   |   |--- hasStructure/type=Alcohol >  3.50
+|   |   |   |--- class: mutagenic

@@ -1,0 +1,4 @@
+# Optional: R-GCN baseline (src/gnn.py). Not needed for CI.
+-r requirements.txt
+torch==2.14.1
+torch_geometric==2.8.1

@@ -1,0 +1,3 @@
+# Optional: Streamlit demo (app/demo.py).
+-r requirements.txt
+streamlit==1.66.0

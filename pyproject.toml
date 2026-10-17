@@ -1,0 +1,14 @@
+[tool.ruff]
+line-length = 79
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning:rdflib.*"]
+markers = [
+    "quality: model-quality gate (published results reproduce, accuracy floors hold)",
+]

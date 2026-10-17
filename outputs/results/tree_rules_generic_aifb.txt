@@ -1,0 +1,25 @@
+|--- publication/isAbout=id79instance <= 0.50
+|   |--- publication/author=id29instance <= 0.50
+|   |   |--- worksAtProject/financedBy=id27instance <= 0.50
+|   |   |   |--- worksAtProject/isAbout=id79instance <= 0.50
+|   |   |   |   |--- phone=- <= 0.50
+|   |   |   |   |   |--- publication/author=id2instance <= 2.00
+|   |   |   |   |   |   |--- class: id1instance
+|   |   |   |   |   |--- publication/author=id2instance >  2.00
+|   |   |   |   |   |   |--- class: id4instance
+|   |   |   |   |--- phone=- >  0.50
+|   |   |   |   |   |--- class: id3instance
+|   |   |   |--- worksAtProject/isAbout=id79instance >  0.50
+|   |   |   |   |--- class: id3instance
+|   |   |--- worksAtProject/financedBy=id27instance >  0.50
+|   |   |   |--- class: id4instance
+|   |--- publication/author=id29instance >  0.50
+|   |   |--- publication/address=Leeds, U.K. <= 0.50
+|   |   |   |--- class: id2instance
+|   |   |--- publication/address=Leeds, U.K. >  0.50
+|   |   |   |--- class: id1instance
+|--- publication/isAbout=id79instance >  0.50
+|   |--- worksAtProject/member=id38instance <= 0.50
+|   |   |--- class: id3instance
+|   |--- worksAtProject/member=id38instance >  0.50
+|   |   |--- class: id1instance

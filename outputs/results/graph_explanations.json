@@ -1,0 +1,232 @@
+{
+  "feature_set": "graph",
+  "model": "lightgbm",
+  "top_features_mean_abs_shap": [
+    [
+      "topic:semantic web",
+      0.6323
+    ],
+    [
+      "profile:n_publications",
+      0.456
+    ],
+    [
+      "profile:has_photo",
+      0.2997
+    ],
+    [
+      "profile:has_phone",
+      0.2637
+    ],
+    [
+      "coauthor:Hartmut Schmeck",
+      0.2454
+    ],
+    [
+      "coauthor:Rudi Studer",
+      0.2216
+    ],
+    [
+      "profile:n_projects",
+      0.1712
+    ],
+    [
+      "profile:has_fax",
+      0.1626
+    ],
+    [
+      "profile:n_coauthors",
+      0.1606
+    ],
+    [
+      "topic:Peer-to-Peer",
+      0.1469
+    ],
+    [
+      "topic:evolutionary algorithms",
+      0.1
+    ],
+    [
+      "coauthor:Wolffried Stucky",
+      0.0934
+    ],
+    [
+      "contact:fax=07216086580",
+      0.0933
+    ],
+    [
+      "coauthor:Andreas Oberweis",
+      0.0849
+    ],
+    [
+      "contact:fax=0721693717",
+      0.0827
+    ],
+    [
+      "topic:computational finance",
+      0.0725
+    ],
+    [
+      "topic:Ontology Engineering",
+      0.0642
+    ],
+    [
+      "coauthor:Jürgen Branke",
+      0.0635
+    ],
+    [
+      "topic:efficient algorithms",
+      0.0523
+    ],
+    [
+      "profile:role=PhDStudent",
+      0.0501
+    ]
+  ],
+  "family_shap_share": {
+    "profile": 0.3881,
+    "topic": 0.3308,
+    "coauthor": 0.2154,
+    "contact": 0.0619,
+    "project": 0.0038
+  },
+  "class_drivers": {
+    "Business Information and Communication Systems": [
+      [
+        "profile:n_projects",
+        0.28
+      ],
+      [
+        "topic:Peer-to-Peer",
+        0.272
+      ],
+      [
+        "coauthor:Wolffried Stucky",
+        0.26
+      ],
+      [
+        "topic:evolutionary algorithms",
+        0.26
+      ],
+      [
+        "topic:Ontology Engineering",
+        0.25
+      ]
+    ],
+    "Efficient Algorithms": [
+      [
+        "coauthor:Hartmut Schmeck",
+        2.453
+      ],
+      [
+        "coauthor:Jürgen Branke",
+        0.962
+      ],
+      [
+        "contact:fax=0721693717",
+        0.392
+      ],
+      [
+        "topic:nature-inspired algorithms",
+        0.356
+      ],
+      [
+        "profile:n_publications",
+        0.351
+      ]
+    ],
+    "Knowledge Management": [
+      [
+        "topic:semantic web",
+        2.369
+      ],
+      [
+        "coauthor:Rudi Studer",
+        1.214
+      ],
+      [
+        "contact:fax=07216086580",
+        0.656
+      ],
+      [
+        "topic:Peer-to-Peer",
+        0.241
+      ],
+      [
+        "profile:n_publications",
+        0.214
+      ]
+    ],
+    "Complexity Management": [
+      [
+        "profile:has_photo",
+        1.195
+      ],
+      [
+        "topic:computational finance",
+        1.144
+      ],
+      [
+        "profile:has_fax",
+        0.986
+      ],
+      [
+        "profile:has_phone",
+        0.703
+      ],
+      [
+        "coauthor:Detlef Seese",
+        0.564
+      ]
+    ]
+  },
+  "family_ablation": {
+    "accuracy_all_families": 0.9016402116402118,
+    "families": {
+      "coauthor": {
+        "accuracy_without": 0.8446560846560848,
+        "drop_without": 0.056984126984127026,
+        "accuracy_only": 0.8522751322751325
+      },
+      "contact": {
+        "accuracy_without": 0.8618518518518521,
+        "drop_without": 0.039788359788359706,
+        "accuracy_only": 0.608148148148148
+      },
+      "profile": {
+        "accuracy_without": 0.9054497354497356,
+        "drop_without": -0.003809523809523818,
+        "accuracy_only": 0.5871957671957673
+      },
+      "project": {
+        "accuracy_without": 0.9016402116402118,
+        "drop_without": 0.0,
+        "accuracy_only": 0.6442857142857142
+      },
+      "topic": {
+        "accuracy_without": 0.8921693121693122,
+        "drop_without": 0.00947089947089963,
+        "accuracy_only": 0.8390476190476192
+      }
+    }
+  },
+  "surrogate_fidelity_test": 0.8333333333333334,
+  "importance_agreement": {
+    "SHAP vs Gain": {
+      "spearman_all": 0.9996156863223821,
+      "spearman_top_union": 0.38241106719367585,
+      "jaccard_top": 0.7391304347826086
+    },
+    "SHAP vs Permutation": {
+      "spearman_all": 0.5520766548827666,
+      "spearman_top_union": 0.4178659154513489,
+      "jaccard_top": 0.6666666666666666
+    },
+    "Gain vs Permutation": {
+      "spearman_all": 0.5520115028918787,
+      "spearman_top_union": 0.16732065853317832,
+      "jaccard_top": 0.6666666666666666
+    },
+    "permutation_nonzero_features": 24
+  }
+}

@@ -1,0 +1,73 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Lint
+        run: make lint
+      - name: Unit tests
+        run: make test
+      - name: Model quality gate
+        run: make quality
+
+  docker:
+    needs: lint-and-test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image
+        run: docker build -t explainable-kg-classification .
+      - name: Tests inside the image (includes the Streamlit demo test)
+        run: >
+          docker run --rm explainable-kg-classification
+          python -m pytest -q -p no:cacheprovider -m "not quality"
+      - name: Demo serves and is healthy
+        run: |
+          docker run -d --name demo -p 8501:8501 explainable-kg-classification
+          for i in $(seq 1 30); do
+            curl -sf http://localhost:8501/_stcore/health && exit 0
+            sleep 2
+          done
+          docker logs demo
+          exit 1
+
+  demo-image:
+    needs: lint-and-test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    env:
+      IMAGE: ghcr.io/${{ github.repository_owner }}/explainable-kg-demo
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the hosted-demo image
+        run: docker build -f app/Dockerfile -t "$IMAGE:latest" .
+      - name: Demo image serves and is healthy
+        run: |
+          docker run -d --name demo -p 8501:8501 "$IMAGE:latest"
+          for i in $(seq 1 30); do
+            curl -sf http://localhost:8501/_stcore/health && exit 0
+            sleep 2
+          done
+          docker logs demo
+          exit 1
+      - name: Publish to GitHub Container Registry
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          echo "${{ secrets.GITHUB_TOKEN }}" |
+            docker login ghcr.io -u "${{ github.actor }}" --password-stdin
+          docker tag "$IMAGE:latest" "$IMAGE:${GITHUB_SHA::7}"
+          docker push "$IMAGE:latest"
+          docker push "$IMAGE:${GITHUB_SHA::7}"

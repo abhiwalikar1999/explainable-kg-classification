@@ -1,0 +1,22 @@
+|--- group_path:papers_by=Knowledge Management <= 0.50
+|   |--- group_path:papers_by=Efficient Algorithms <= 0.50
+|   |   |--- topic:genetic algorithms <= 0.50
+|   |   |   |--- topic:Peer-to-Peer <= 0.50
+|   |   |   |   |--- class: Business Information and Communication Systems
+|   |   |   |--- topic:Peer-to-Peer >  0.50
+|   |   |   |   |--- class: Knowledge Management
+|   |   |--- topic:genetic algorithms >  0.50
+|   |   |   |--- class: Complexity Management
+|   |--- group_path:papers_by=Efficient Algorithms >  0.50
+|   |   |--- group_path:papers_by=Complexity Management <= 4.00
+|   |   |   |--- coauthor:Gunther Schiefer <= 0.50
+|   |   |   |   |--- class: Efficient Algorithms
+|   |   |   |--- coauthor:Gunther Schiefer >  0.50
+|   |   |   |   |--- class: Business Information and Communication Systems
+|   |   |--- group_path:papers_by=Complexity Management >  4.00
+|   |   |   |--- class: Complexity Management
+|--- group_path:papers_by=Knowledge Management >  0.50
+|   |--- contact:phone_block=072160845xx <= 0.50
+|   |   |--- class: Knowledge Management
+|   |--- contact:phone_block=072160845xx >  0.50
+|   |   |--- class: Business Information and Communication Systems

@@ -1,0 +1,2455 @@
+{
+  "description": "Per test person: the tuned decision tree's path and LightGBM's prediction with its TreeSHAP reasons (graph features). Written by `python -m src.pipeline --stages demo`; read by app/demo.py.",
+  "class_names": [
+    "Business Information and Communication Systems",
+    "Efficient Algorithms",
+    "Knowledge Management",
+    "Complexity Management"
+  ],
+  "persons": [
+    {
+      "name": "Andreas Oberweis",
+      "true_group": "Business Information and Communication Systems",
+      "tree_prediction": "Business Information and Communication Systems",
+      "tree_path": [
+        "topic “semantic web”: yes",
+        "topic “workflow management”: 8 (> 1)",
+        "→ Business Information and Communication Systems"
+      ],
+      "lightgbm_prediction": "Business Information and Communication Systems",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.9927414086721705,
+        "Efficient Algorithms": 0.0007622437076207844,
+        "Knowledge Management": 0.005748801439726361,
+        "Complexity Management": 0.0007475461804823554
+      },
+      "top_reasons": [
+        {
+          "feature": "co-authored with Wolffried Stucky",
+          "value": 1.0,
+          "shap": 1.487253721868577
+        },
+        {
+          "feature": "co-authored with Rudi Studer",
+          "value": 1.0,
+          "shap": -0.4953061872190826
+        },
+        {
+          "feature": "number of projects",
+          "value": 4.0,
+          "shap": -0.3985279189871057
+        },
+        {
+          "feature": "contact detail phone_block=072160845xx",
+          "value": 1.0,
+          "shap": 0.3710909847610972
+        },
+        {
+          "feature": "topic “office information systems”",
+          "value": 4.0,
+          "shap": 0.3082213391679293
+        },
+        {
+          "feature": "topic “Peer-to-Peer”",
+          "value": 0.0,
+          "shap": 0.30349831606434885
+        },
+        {
+          "feature": "topic “Ontology Engineering”",
+          "value": 0.0,
+          "shap": 0.2663106210245149
+        },
+        {
+          "feature": "number of publications",
+          "value": 52.0,
+          "shap": 0.22428617076800686
+        }
+      ],
+      "family_totals": {
+        "coauthor": 1.336964986648519,
+        "contact": 0.4590577882769833,
+        "profile": -0.18213586225362027,
+        "project": 0.0,
+        "topic": 1.5544537745755909
+      }
+    },
+    {
+      "name": "André Wiesner",
+      "true_group": "Efficient Algorithms",
+      "tree_prediction": "Efficient Algorithms",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: yes",
+        "co-authored with Rebecca Bulander: no",
+        "→ Efficient Algorithms"
+      ],
+      "lightgbm_prediction": "Efficient Algorithms",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.011724127270721845,
+        "Efficient Algorithms": 0.9858434529742768,
+        "Knowledge Management": 0.0017526879659174822,
+        "Complexity Management": 0.0006797317890840291
+      },
+      "top_reasons": [
+        {
+          "feature": "co-authored with Hartmut Schmeck",
+          "value": 1.0,
+          "shap": 5.166630769851448
+        },
+        {
+          "feature": "contact detail fax=07216085998",
+          "value": 1.0,
+          "shap": -0.2978230774846964
+        },
+        {
+          "feature": "has a phone number",
+          "value": 1.0,
+          "shap": -0.1325538828763237
+        },
+        {
+          "feature": "contact detail fax=0721693717",
+          "value": 0.0,
+          "shap": -0.07427642312532508
+        },
+        {
+          "feature": "number of co-authors",
+          "value": 4.0,
+          "shap": 0.0677409480604906
+        },
+        {
+          "feature": "has a fax number",
+          "value": 1.0,
+          "shap": -0.0655822217833382
+        },
+        {
+          "feature": "number of projects",
+          "value": 2.0,
+          "shap": 0.061180383831529406
+        },
+        {
+          "feature": "topic “evolutionary algorithms”",
+          "value": 0.0,
+          "shap": -0.06006319864670619
+        }
+      ],
+      "family_totals": {
+        "coauthor": 5.145142142091368,
+        "contact": -0.3894570641249276,
+        "profile": -0.048961080711678796,
+        "project": 0.0,
+        "topic": -0.08051974444086311
+      }
+    },
+    {
+      "name": "Anna-Maria Eberhardt",
+      "true_group": "Knowledge Management",
+      "tree_prediction": "Business Information and Communication Systems",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: no",
+        "topic “computational finance”: no",
+        "co-authored with Rudi Studer: no",
+        "topic “evolutionary algorithms”: no",
+        "→ Business Information and Communication Systems"
+      ],
+      "lightgbm_prediction": "Knowledge Management",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.02440432479192554,
+        "Efficient Algorithms": 0.0014985066789473967,
+        "Knowledge Management": 0.9738703008048482,
+        "Complexity Management": 0.0002268677242787978
+      },
+      "top_reasons": [
+        {
+          "feature": "contact detail fax=07216086580",
+          "value": 1.0,
+          "shap": 4.979731571994618
+        },
+        {
+          "feature": "topic “semantic web”",
+          "value": 0.0,
+          "shap": -1.2380689519611634
+        },
+        {
+          "feature": "number of co-authors",
+          "value": 0.0,
+          "shap": 0.7270785567756234
+        },
+        {
+          "feature": "has a fax number",
+          "value": 1.0,
+          "shap": 0.4143844001257904
+        },
+        {
+          "feature": "number of publications",
+          "value": 0.0,
+          "shap": -0.31277090829738274
+        },
+        {
+          "feature": "co-authored with Rudi Studer",
+          "value": 0.0,
+          "shap": -0.1595852748044621
+        },
+        {
+          "feature": "has a photo",
+          "value": 1.0,
+          "shap": -0.061024227511363834
+        },
+        {
+          "feature": "has a phone number",
+          "value": 1.0,
+          "shap": -0.05337039016727475
+        }
+      ],
+      "family_totals": {
+        "coauthor": -0.10991543482602477,
+        "contact": 4.979731571994618,
+        "profile": 0.7142974309253926,
+        "project": 0.0,
+        "topic": -1.2892974979554204
+      }
+    },
+    {
+      "name": "Armin Fost",
+      "true_group": "Business Information and Communication Systems",
+      "tree_prediction": "Business Information and Communication Systems",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: no",
+        "topic “computational finance”: no",
+        "co-authored with Rudi Studer: no",
+        "topic “evolutionary algorithms”: no",
+        "→ Business Information and Communication Systems"
+      ],
+      "lightgbm_prediction": "Business Information and Communication Systems",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.9184643878332932,
+        "Efficient Algorithms": 0.07540835730819574,
+        "Knowledge Management": 0.004999319816072427,
+        "Complexity Management": 0.0011279350424386854
+      },
+      "top_reasons": [
+        {
+          "feature": "number of projects",
+          "value": 0.0,
+          "shap": 0.5151571160244409
+        },
+        {
+          "feature": "number of publications",
+          "value": 0.0,
+          "shap": 0.3401900932473287
+        },
+        {
+          "feature": "has a photo",
+          "value": 0.0,
+          "shap": 0.30827056134817427
+        },
+        {
+          "feature": "topic “evolutionary algorithms”",
+          "value": 0.0,
+          "shap": 0.25427216492138915
+        },
+        {
+          "feature": "topic “Ontology Engineering”",
+          "value": 0.0,
+          "shap": 0.24929078676726424
+        },
+        {
+          "feature": "topic “Peer-to-Peer”",
+          "value": 0.0,
+          "shap": 0.24744113167981097
+        },
+        {
+          "feature": "topic “semantic web”",
+          "value": 0.0,
+          "shap": 0.23445445461930564
+        },
+        {
+          "feature": "co-authored with Wolffried Stucky",
+          "value": 0.0,
+          "shap": -0.20866235369468292
+        }
+      ],
+      "family_totals": {
+        "coauthor": -0.2650086374528968,
+        "contact": 0.0897345170138688,
+        "profile": 0.9988239583655449,
+        "project": 0.0,
+        "topic": 1.2329967541514304
+      }
+    },
+    {
+      "name": "Bernhadr Kölmel",
+      "true_group": "Business Information and Communication Systems",
+      "tree_prediction": "Business Information and Communication Systems",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: no",
+        "topic “computational finance”: no",
+        "co-authored with Rudi Studer: no",
+        "topic “evolutionary algorithms”: no",
+        "→ Business Information and Communication Systems"
+      ],
+      "lightgbm_prediction": "Business Information and Communication Systems",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.9184643878332932,
+        "Efficient Algorithms": 0.07540835730819574,
+        "Knowledge Management": 0.004999319816072427,
+        "Complexity Management": 0.0011279350424386854
+      },
+      "top_reasons": [
+        {
+          "feature": "number of projects",
+          "value": 0.0,
+          "shap": 0.5151571160244409
+        },
+        {
+          "feature": "number of publications",
+          "value": 0.0,
+          "shap": 0.3401900932473287
+        },
+        {
+          "feature": "has a photo",
+          "value": 0.0,
+          "shap": 0.30827056134817427
+        },
+        {
+          "feature": "topic “evolutionary algorithms”",
+          "value": 0.0,
+          "shap": 0.25427216492138915
+        },
+        {
+          "feature": "topic “Ontology Engineering”",
+          "value": 0.0,
+          "shap": 0.24929078676726424
+        },
+        {
+          "feature": "topic “Peer-to-Peer”",
+          "value": 0.0,
+          "shap": 0.24744113167981097
+        },
+        {
+          "feature": "topic “semantic web”",
+          "value": 0.0,
+          "shap": 0.23445445461930564
+        },
+        {
+          "feature": "co-authored with Wolffried Stucky",
+          "value": 0.0,
+          "shap": -0.20866235369468292
+        }
+      ],
+      "family_totals": {
+        "coauthor": -0.2650086374528968,
+        "contact": 0.0897345170138688,
+        "profile": 0.9988239583655449,
+        "project": 0.0,
+        "topic": 1.2329967541514304
+      }
+    },
+    {
+      "name": "Christian Max Ullrich",
+      "true_group": "Complexity Management",
+      "tree_prediction": "Complexity Management",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: no",
+        "topic “computational finance”: yes",
+        "→ Complexity Management"
+      ],
+      "lightgbm_prediction": "Complexity Management",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.0007643640600556998,
+        "Efficient Algorithms": 0.00029902016371977563,
+        "Knowledge Management": 0.005360976093630559,
+        "Complexity Management": 0.9935756396825939
+      },
+      "top_reasons": [
+        {
+          "feature": "topic “computational finance”",
+          "value": 1.0,
+          "shap": 2.88256194806833
+        },
+        {
+          "feature": "has a fax number",
+          "value": 0.0,
+          "shap": 1.580517922167672
+        },
+        {
+          "feature": "has a photo",
+          "value": 1.0,
+          "shap": 1.1849721826483137
+        },
+        {
+          "feature": "co-authored with Detlef Seese",
+          "value": 1.0,
+          "shap": 1.0220604118984828
+        },
+        {
+          "feature": "has a phone number",
+          "value": 0.0,
+          "shap": 0.9898185015516495
+        },
+        {
+          "feature": "topic “electronic markets”",
+          "value": 1.0,
+          "shap": 0.4966913477611592
+        },
+        {
+          "feature": "number of publications",
+          "value": 3.0,
+          "shap": -0.2260098146853935
+        },
+        {
+          "feature": "role: PhDStudent",
+          "value": 1.0,
+          "shap": 0.18369088278024318
+        }
+      ],
+      "family_totals": {
+        "coauthor": 0.9792286642177149,
+        "contact": -0.05773140645909522,
+        "profile": 3.95525126117497,
+        "project": 0.04453565751107276,
+        "topic": 3.7048280652414176
+      }
+    },
+    {
+      "name": "Cornelia Richter-von Hagen",
+      "true_group": "Business Information and Communication Systems",
+      "tree_prediction": "Business Information and Communication Systems",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: no",
+        "topic “computational finance”: no",
+        "co-authored with Rudi Studer: no",
+        "topic “evolutionary algorithms”: no",
+        "→ Business Information and Communication Systems"
+      ],
+      "lightgbm_prediction": "Business Information and Communication Systems",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.9942627539859811,
+        "Efficient Algorithms": 0.0024238855533193996,
+        "Knowledge Management": 0.0023801583370198624,
+        "Complexity Management": 0.0009332021236796635
+      },
+      "top_reasons": [
+        {
+          "feature": "co-authored with Wolffried Stucky",
+          "value": 1.0,
+          "shap": 1.723213585556746
+        },
+        {
+          "feature": "contact detail fax=0721693717",
+          "value": 1.0,
+          "shap": -0.7136419195983535
+        },
+        {
+          "feature": "number of projects",
+          "value": 0.0,
+          "shap": 0.36059473396113917
+        },
+        {
+          "feature": "topic “Peer-to-Peer”",
+          "value": 0.0,
+          "shap": 0.29149773398077466
+        },
+        {
+          "feature": "topic “evolutionary algorithms”",
+          "value": 0.0,
+          "shap": 0.24478940489280898
+        },
+        {
+          "feature": "co-authored with Andreas Oberweis",
+          "value": 0.0,
+          "shap": -0.200026419087247
+        },
+        {
+          "feature": "topic “Artificial Intelligence”",
+          "value": 0.0,
+          "shap": 0.19601364094201115
+        },
+        {
+          "feature": "topic “semantic web”",
+          "value": 0.0,
+          "shap": 0.18296394450349457
+        }
+      ],
+      "family_totals": {
+        "coauthor": 1.6056837128764057,
+        "contact": -0.7085145642498063,
+        "profile": 0.4138066076018419,
+        "project": 0.0,
+        "topic": 1.2443734273024738
+      }
+    },
+    {
+      "name": "Daniel Merkle",
+      "true_group": "Efficient Algorithms",
+      "tree_prediction": "Efficient Algorithms",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: yes",
+        "co-authored with Rebecca Bulander: no",
+        "→ Efficient Algorithms"
+      ],
+      "lightgbm_prediction": "Efficient Algorithms",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.00860596538810629,
+        "Efficient Algorithms": 0.9889540801913664,
+        "Knowledge Management": 0.0017689450199094886,
+        "Complexity Management": 0.0006710094006179028
+      },
+      "top_reasons": [
+        {
+          "feature": "co-authored with Hartmut Schmeck",
+          "value": 1.0,
+          "shap": 2.4197715731380898
+        },
+        {
+          "feature": "co-authored with Jürgen Branke",
+          "value": 1.0,
+          "shap": 1.7424676333766849
+        },
+        {
+          "feature": "topic “nature-inspired algorithms”",
+          "value": 1.0,
+          "shap": 1.1030390384310313
+        },
+        {
+          "feature": "number of publications",
+          "value": 13.0,
+          "shap": -0.9001114004336607
+        },
+        {
+          "feature": "topic “efficient algorithms”",
+          "value": 1.0,
+          "shap": 0.22067035670927296
+        },
+        {
+          "feature": "topic “ant algorithms”",
+          "value": 9.0,
+          "shap": 0.13867901402425323
+        },
+        {
+          "feature": "has a phone number",
+          "value": 1.0,
+          "shap": -0.1137200440340975
+        },
+        {
+          "feature": "topic “evolutionary algorithms”",
+          "value": 0.0,
+          "shap": -0.0862412127237586
+        }
+      ],
+      "family_totals": {
+        "coauthor": 4.193959701358639,
+        "contact": 0.005983606499923062,
+        "profile": -1.050350130478638,
+        "project": 0.0,
+        "topic": 1.470528658350408
+      }
+    },
+    {
+      "name": "Daniel Oberle",
+      "true_group": "Knowledge Management",
+      "tree_prediction": "Knowledge Management",
+      "tree_path": [
+        "topic “semantic web”: 13 (> 0.5)",
+        "topic “workflow management”: 0 (≤ 1)",
+        "→ Knowledge Management"
+      ],
+      "lightgbm_prediction": "Knowledge Management",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.00028090241739179965,
+        "Efficient Algorithms": 0.00012114150490319432,
+        "Knowledge Management": 0.9994698121911655,
+        "Complexity Management": 0.00012814388653960374
+      },
+      "top_reasons": [
+        {
+          "feature": "contact detail fax=07216086580",
+          "value": 1.0,
+          "shap": 1.684131263409216
+        },
+        {
+          "feature": "topic “semantic web”",
+          "value": 13.0,
+          "shap": 1.6380891853787538
+        },
+        {
+          "feature": "co-authored with Rudi Studer",
+          "value": 1.0,
+          "shap": 1.3747780971477903
+        },
+        {
+          "feature": "topic “Peer-to-Peer”",
+          "value": 1.0,
+          "shap": 0.45390141944562024
+        },
+        {
+          "feature": "co-authored with Daniel Ried",
+          "value": 0.0,
+          "shap": 0.14548451681548955
+        },
+        {
+          "feature": "number of publications",
+          "value": 47.0,
+          "shap": 0.12214568875089356
+        },
+        {
+          "feature": "has a phone number",
+          "value": 1.0,
+          "shap": -0.05289639202170549
+        },
+        {
+          "feature": "number of co-authors",
+          "value": 75.0,
+          "shap": -0.050888780274196715
+        }
+      ],
+      "family_totals": {
+        "coauthor": 1.583076045080077,
+        "contact": 1.684131263409216,
+        "profile": 0.01393133341240825,
+        "project": 0.0,
+        "topic": 2.1037963387696834
+      }
+    },
+    {
+      "name": "Daniel Ried",
+      "true_group": "Business Information and Communication Systems",
+      "tree_prediction": "Business Information and Communication Systems",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: no",
+        "topic “computational finance”: no",
+        "co-authored with Rudi Studer: no",
+        "topic “evolutionary algorithms”: no",
+        "→ Business Information and Communication Systems"
+      ],
+      "lightgbm_prediction": "Business Information and Communication Systems",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.9983340415592503,
+        "Efficient Algorithms": 0.0005843610828051236,
+        "Knowledge Management": 0.0008248802949005836,
+        "Complexity Management": 0.0002567170630440022
+      },
+      "top_reasons": [
+        {
+          "feature": "co-authored with Andreas Oberweis",
+          "value": 1.0,
+          "shap": 1.4882252792432031
+        },
+        {
+          "feature": "co-authored with Agnes Koschmider",
+          "value": 1.0,
+          "shap": 0.5001011631291579
+        },
+        {
+          "feature": "topic “office information systems”",
+          "value": 1.0,
+          "shap": 0.33685150320383955
+        },
+        {
+          "feature": "co-authored with Marco Mevius",
+          "value": 1.0,
+          "shap": 0.31866415403501763
+        },
+        {
+          "feature": "topic “Peer-to-Peer”",
+          "value": 0.0,
+          "shap": 0.28261738924711877
+        },
+        {
+          "feature": "topic “evolutionary algorithms”",
+          "value": 0.0,
+          "shap": 0.2767414844506144
+        },
+        {
+          "feature": "topic “Ontology Engineering”",
+          "value": 0.0,
+          "shap": 0.26685389300647155
+        },
+        {
+          "feature": "number of projects",
+          "value": 1.0,
+          "shap": -0.26608677214250975
+        }
+      ],
+      "family_totals": {
+        "coauthor": 2.176974612730407,
+        "contact": 0.054570133199808385,
+        "profile": -0.3536268948496174,
+        "project": 0.0,
+        "topic": 1.7412017658840748
+      }
+    },
+    {
+      "name": "Fabian Schroeder",
+      "true_group": "Business Information and Communication Systems",
+      "tree_prediction": "Business Information and Communication Systems",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: no",
+        "topic “computational finance”: no",
+        "co-authored with Rudi Studer: no",
+        "topic “evolutionary algorithms”: no",
+        "→ Business Information and Communication Systems"
+      ],
+      "lightgbm_prediction": "Business Information and Communication Systems",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.6035062225138943,
+        "Efficient Algorithms": 0.06388207581775224,
+        "Knowledge Management": 0.016455057409187825,
+        "Complexity Management": 0.3161566442591655
+      },
+      "top_reasons": [
+        {
+          "feature": "number of projects",
+          "value": 0.0,
+          "shap": 0.5930188061874307
+        },
+        {
+          "feature": "has a photo",
+          "value": 1.0,
+          "shap": -0.45111516171032157
+        },
+        {
+          "feature": "topic “semantic web”",
+          "value": 0.0,
+          "shap": 0.23445445461930564
+        },
+        {
+          "feature": "topic “Peer-to-Peer”",
+          "value": 0.0,
+          "shap": 0.23339609865607439
+        },
+        {
+          "feature": "co-authored with Andreas Oberweis",
+          "value": 0.0,
+          "shap": -0.23304686485173925
+        },
+        {
+          "feature": "co-authored with Wolffried Stucky",
+          "value": 0.0,
+          "shap": -0.23266404448673778
+        },
+        {
+          "feature": "topic “evolutionary algorithms”",
+          "value": 0.0,
+          "shap": 0.23175973757165094
+        },
+        {
+          "feature": "topic “Ontology Engineering”",
+          "value": 0.0,
+          "shap": 0.19283902176932943
+        }
+      ],
+      "family_totals": {
+        "coauthor": -0.3644105053668192,
+        "contact": 0.07992044406939372,
+        "profile": 0.2108549268304445,
+        "project": 0.0,
+        "topic": 1.1151387784101052
+      }
+    },
+    {
+      "name": "Gisela Schillinger",
+      "true_group": "Knowledge Management",
+      "tree_prediction": "Business Information and Communication Systems",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: no",
+        "topic “computational finance”: no",
+        "co-authored with Rudi Studer: no",
+        "topic “evolutionary algorithms”: no",
+        "→ Business Information and Communication Systems"
+      ],
+      "lightgbm_prediction": "Knowledge Management",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.02440432479192554,
+        "Efficient Algorithms": 0.0014985066789473967,
+        "Knowledge Management": 0.9738703008048482,
+        "Complexity Management": 0.0002268677242787978
+      },
+      "top_reasons": [
+        {
+          "feature": "contact detail fax=07216086580",
+          "value": 1.0,
+          "shap": 4.979731571994618
+        },
+        {
+          "feature": "topic “semantic web”",
+          "value": 0.0,
+          "shap": -1.2380689519611634
+        },
+        {
+          "feature": "number of co-authors",
+          "value": 0.0,
+          "shap": 0.7270785567756234
+        },
+        {
+          "feature": "has a fax number",
+          "value": 1.0,
+          "shap": 0.4143844001257904
+        },
+        {
+          "feature": "number of publications",
+          "value": 0.0,
+          "shap": -0.31277090829738274
+        },
+        {
+          "feature": "co-authored with Rudi Studer",
+          "value": 0.0,
+          "shap": -0.1595852748044621
+        },
+        {
+          "feature": "has a photo",
+          "value": 1.0,
+          "shap": -0.061024227511363834
+        },
+        {
+          "feature": "has a phone number",
+          "value": 1.0,
+          "shap": -0.05337039016727475
+        }
+      ],
+      "family_totals": {
+        "coauthor": -0.10991543482602477,
+        "contact": 4.979731571994618,
+        "profile": 0.7142974309253926,
+        "project": 0.0,
+        "topic": -1.2892974979554204
+      }
+    },
+    {
+      "name": "Hans-Peter Schnurr",
+      "true_group": "Knowledge Management",
+      "tree_prediction": "Knowledge Management",
+      "tree_path": [
+        "topic “semantic web”: 3 (> 0.5)",
+        "topic “workflow management”: 0 (≤ 1)",
+        "→ Knowledge Management"
+      ],
+      "lightgbm_prediction": "Knowledge Management",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.005212397096024607,
+        "Efficient Algorithms": 0.00018920296162257518,
+        "Knowledge Management": 0.9944905335381559,
+        "Complexity Management": 0.00010786640419708196
+      },
+      "top_reasons": [
+        {
+          "feature": "topic “semantic web”",
+          "value": 3.0,
+          "shap": 3.1779194979255125
+        },
+        {
+          "feature": "co-authored with Rudi Studer",
+          "value": 1.0,
+          "shap": 1.756735859372248
+        },
+        {
+          "feature": "topic “business process management”",
+          "value": 1.0,
+          "shap": -0.27388338874846285
+        },
+        {
+          "feature": "number of publications",
+          "value": 25.0,
+          "shap": 0.23907683891346132
+        },
+        {
+          "feature": "co-authored with Daniel Ried",
+          "value": 0.0,
+          "shap": 0.14548451681548955
+        },
+        {
+          "feature": "has a phone number",
+          "value": 1.0,
+          "shap": -0.09110741300030202
+        },
+        {
+          "feature": "number of co-authors",
+          "value": 28.0,
+          "shap": -0.07170636694549513
+        },
+        {
+          "feature": "has a fax number",
+          "value": 1.0,
+          "shap": 0.038216461298337806
+        }
+      ],
+      "family_totals": {
+        "coauthor": 1.965308931881457,
+        "contact": -0.019884157530348435,
+        "profile": 0.12657460858033193,
+        "project": 0.0,
+        "topic": 2.8547732390275913
+      }
+    },
+    {
+      "name": "Herbert Kuss",
+      "true_group": "Business Information and Communication Systems",
+      "tree_prediction": "Business Information and Communication Systems",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: no",
+        "topic “computational finance”: no",
+        "co-authored with Rudi Studer: no",
+        "topic “evolutionary algorithms”: no",
+        "→ Business Information and Communication Systems"
+      ],
+      "lightgbm_prediction": "Business Information and Communication Systems",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.9184643878332932,
+        "Efficient Algorithms": 0.07540835730819574,
+        "Knowledge Management": 0.004999319816072427,
+        "Complexity Management": 0.0011279350424386854
+      },
+      "top_reasons": [
+        {
+          "feature": "number of projects",
+          "value": 0.0,
+          "shap": 0.5151571160244409
+        },
+        {
+          "feature": "number of publications",
+          "value": 0.0,
+          "shap": 0.3401900932473287
+        },
+        {
+          "feature": "has a photo",
+          "value": 0.0,
+          "shap": 0.30827056134817427
+        },
+        {
+          "feature": "topic “evolutionary algorithms”",
+          "value": 0.0,
+          "shap": 0.25427216492138915
+        },
+        {
+          "feature": "topic “Ontology Engineering”",
+          "value": 0.0,
+          "shap": 0.24929078676726424
+        },
+        {
+          "feature": "topic “Peer-to-Peer”",
+          "value": 0.0,
+          "shap": 0.24744113167981097
+        },
+        {
+          "feature": "topic “semantic web”",
+          "value": 0.0,
+          "shap": 0.23445445461930564
+        },
+        {
+          "feature": "co-authored with Wolffried Stucky",
+          "value": 0.0,
+          "shap": -0.20866235369468292
+        }
+      ],
+      "family_totals": {
+        "coauthor": -0.2650086374528968,
+        "contact": 0.0897345170138688,
+        "profile": 0.9988239583655449,
+        "project": 0.0,
+        "topic": 1.2329967541514304
+      }
+    },
+    {
+      "name": "Holger Prothmann",
+      "true_group": "Efficient Algorithms",
+      "tree_prediction": "Efficient Algorithms",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: yes",
+        "co-authored with Rebecca Bulander: no",
+        "→ Efficient Algorithms"
+      ],
+      "lightgbm_prediction": "Efficient Algorithms",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.0010204491161473442,
+        "Efficient Algorithms": 0.998231331250338,
+        "Knowledge Management": 0.0005705833364747482,
+        "Complexity Management": 0.0001776362970400282
+      },
+      "top_reasons": [
+        {
+          "feature": "co-authored with Hartmut Schmeck",
+          "value": 1.0,
+          "shap": 2.4900368636539674
+        },
+        {
+          "feature": "co-authored with Jürgen Branke",
+          "value": 1.0,
+          "shap": 1.8440591793258103
+        },
+        {
+          "feature": "topic “nature-inspired algorithms”",
+          "value": 1.0,
+          "shap": 0.6785113600890512
+        },
+        {
+          "feature": "topic “evolutionary algorithms”",
+          "value": 1.0,
+          "shap": 0.43547741025604636
+        },
+        {
+          "feature": "contact detail fax=07216085998",
+          "value": 1.0,
+          "shap": -0.2978230774846964
+        },
+        {
+          "feature": "number of publications",
+          "value": 2.0,
+          "shap": 0.26796333892682844
+        },
+        {
+          "feature": "co-authored with Christian Müller-Schloer",
+          "value": 1.0,
+          "shap": 0.1356982745364952
+        },
+        {
+          "feature": "topic “efficient algorithms”",
+          "value": 1.0,
+          "shap": 0.12214684966427979
+        }
+      ],
+      "family_totals": {
+        "coauthor": 4.508687885055649,
+        "contact": -0.35246924405172086,
+        "profile": 0.31736933713261606,
+        "project": 0.0,
+        "topic": 1.2873503809657438
+      }
+    },
+    {
+      "name": "Joachim Melcher",
+      "true_group": "Complexity Management",
+      "tree_prediction": "Business Information and Communication Systems",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: no",
+        "topic “computational finance”: no",
+        "co-authored with Rudi Studer: no",
+        "topic “evolutionary algorithms”: no",
+        "→ Business Information and Communication Systems"
+      ],
+      "lightgbm_prediction": "Complexity Management",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.04473041135017818,
+        "Efficient Algorithms": 0.37789090195134595,
+        "Knowledge Management": 0.014804984069017986,
+        "Complexity Management": 0.5625737026294578
+      },
+      "top_reasons": [
+        {
+          "feature": "works on project CoaSt",
+          "value": 1.0,
+          "shap": 2.1299887607983568
+        },
+        {
+          "feature": "topic “graph theory”",
+          "value": 1.0,
+          "shap": 0.8485835724347158
+        },
+        {
+          "feature": "co-authored with Detlef Seese",
+          "value": 1.0,
+          "shap": 0.6951773840393939
+        },
+        {
+          "feature": "has a fax number",
+          "value": 1.0,
+          "shap": -0.5817314046741693
+        },
+        {
+          "feature": "has a photo",
+          "value": 1.0,
+          "shap": 0.49367718508475944
+        },
+        {
+          "feature": "topic “algorithmic graph theory”",
+          "value": 1.0,
+          "shap": 0.46483470713379466
+        },
+        {
+          "feature": "number of publications",
+          "value": 2.0,
+          "shap": -0.21547858694112296
+        },
+        {
+          "feature": "role: PhDStudent",
+          "value": 1.0,
+          "shap": 0.18632885804304528
+        }
+      ],
+      "family_totals": {
+        "coauthor": 0.6036934468890479,
+        "contact": -0.03798117998009908,
+        "profile": -0.042819088742675704,
+        "project": 2.124904736403713,
+        "topic": 1.200721964189997
+      }
+    },
+    {
+      "name": "Jürgen Angele",
+      "true_group": "Knowledge Management",
+      "tree_prediction": "Knowledge Management",
+      "tree_path": [
+        "topic “semantic web”: 6 (> 0.5)",
+        "topic “workflow management”: 0 (≤ 1)",
+        "→ Knowledge Management"
+      ],
+      "lightgbm_prediction": "Knowledge Management",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.0016621069912459803,
+        "Efficient Algorithms": 0.00017416591744993988,
+        "Knowledge Management": 0.9980952602713271,
+        "Complexity Management": 6.846681997692949e-05
+      },
+      "top_reasons": [
+        {
+          "feature": "topic “semantic web”",
+          "value": 6.0,
+          "shap": 3.349940767271309
+        },
+        {
+          "feature": "co-authored with Rudi Studer",
+          "value": 1.0,
+          "shap": 1.7715913730520765
+        },
+        {
+          "feature": "number of publications",
+          "value": 48.0,
+          "shap": 0.23907683891346132
+        },
+        {
+          "feature": "co-authored with Daniel Ried",
+          "value": 0.0,
+          "shap": 0.14548451681548955
+        },
+        {
+          "feature": "has a phone number",
+          "value": 1.0,
+          "shap": -0.09110741300030202
+        },
+        {
+          "feature": "number of co-authors",
+          "value": 50.0,
+          "shap": -0.05685085326566711
+        },
+        {
+          "feature": "co-authored with André Schaefer",
+          "value": 0.0,
+          "shap": 0.032322511632401345
+        },
+        {
+          "feature": "co-authored with Marco Mevius",
+          "value": 0.0,
+          "shap": 0.032112387596868505
+        }
+      ],
+      "family_totals": {
+        "coauthor": 1.979889320984363,
+        "contact": -0.019884157530348435,
+        "profile": 0.09710688283259239,
+        "project": 0.0,
+        "topic": 3.32782293438478
+      }
+    },
+    {
+      "name": "Maik Herfurth",
+      "true_group": "Business Information and Communication Systems",
+      "tree_prediction": "Business Information and Communication Systems",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: no",
+        "topic “computational finance”: no",
+        "co-authored with Rudi Studer: no",
+        "topic “evolutionary algorithms”: no",
+        "→ Business Information and Communication Systems"
+      ],
+      "lightgbm_prediction": "Business Information and Communication Systems",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.8446775114983902,
+        "Efficient Algorithms": 0.04438202206096353,
+        "Knowledge Management": 0.033459750534110086,
+        "Complexity Management": 0.07748071590653627
+      },
+      "top_reasons": [
+        {
+          "feature": "number of projects",
+          "value": 1.0,
+          "shap": -1.0585734785790681
+        },
+        {
+          "feature": "contact detail phone_block=072160845xx",
+          "value": 1.0,
+          "shap": 0.6394321013036616
+        },
+        {
+          "feature": "co-authored with Andreas Oberweis",
+          "value": 0.0,
+          "shap": -0.2798809299972197
+        },
+        {
+          "feature": "topic “office information systems”",
+          "value": 1.0,
+          "shap": 0.27621338175506793
+        },
+        {
+          "feature": "has a photo",
+          "value": 1.0,
+          "shap": -0.27327437016139566
+        },
+        {
+          "feature": "co-authored with Wolffried Stucky",
+          "value": 0.0,
+          "shap": -0.2632023879157475
+        },
+        {
+          "feature": "topic “evolutionary algorithms”",
+          "value": 0.0,
+          "shap": 0.2273961185067951
+        },
+        {
+          "feature": "topic “Peer-to-Peer”",
+          "value": 0.0,
+          "shap": 0.22051197698361133
+        }
+      ],
+      "family_totals": {
+        "coauthor": -0.5442732666803765,
+        "contact": 0.7638036321299461,
+        "profile": -1.1296524427058134,
+        "project": 0.0,
+        "topic": 1.570087493383182
+      }
+    },
+    {
+      "name": "Markus Kohn",
+      "true_group": "Efficient Algorithms",
+      "tree_prediction": "Business Information and Communication Systems",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: no",
+        "topic “computational finance”: no",
+        "co-authored with Rudi Studer: no",
+        "topic “evolutionary algorithms”: no",
+        "→ Business Information and Communication Systems"
+      ],
+      "lightgbm_prediction": "Complexity Management",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.021914438172138773,
+        "Efficient Algorithms": 0.0022068224642317717,
+        "Knowledge Management": 0.0002681327056603499,
+        "Complexity Management": 0.9756106066579692
+      },
+      "top_reasons": [
+        {
+          "feature": "has a phone number",
+          "value": 0.0,
+          "shap": 3.356703915714729
+        },
+        {
+          "feature": "has a photo",
+          "value": 1.0,
+          "shap": 2.4942926141762434
+        },
+        {
+          "feature": "has a fax number",
+          "value": 0.0,
+          "shap": 1.5033417154348676
+        },
+        {
+          "feature": "number of publications",
+          "value": 0.0,
+          "shap": 1.4696732185148997
+        },
+        {
+          "feature": "topic “computational finance”",
+          "value": 0.0,
+          "shap": -0.11501984640306614
+        },
+        {
+          "feature": "topic “www systems”",
+          "value": 0.0,
+          "shap": 0.11201616442741676
+        },
+        {
+          "feature": "role: PhDStudent",
+          "value": 0.0,
+          "shap": -0.10842562649611072
+        },
+        {
+          "feature": "number of projects",
+          "value": 0.0,
+          "shap": -0.07727331352990859
+        }
+      ],
+      "family_totals": {
+        "coauthor": -0.07835713685947507,
+        "contact": -0.05206843481568643,
+        "profile": 8.656766392244247,
+        "project": -0.017251973827825288,
+        "topic": -0.09350591693609585
+      }
+    },
+    {
+      "name": "Markus Wiese",
+      "true_group": "Knowledge Management",
+      "tree_prediction": "Business Information and Communication Systems",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: no",
+        "topic “computational finance”: no",
+        "co-authored with Rudi Studer: no",
+        "topic “evolutionary algorithms”: no",
+        "→ Business Information and Communication Systems"
+      ],
+      "lightgbm_prediction": "Business Information and Communication Systems",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.9230393869310322,
+        "Efficient Algorithms": 0.012113802360105683,
+        "Knowledge Management": 0.06076902932014427,
+        "Complexity Management": 0.004077781388717972
+      },
+      "top_reasons": [
+        {
+          "feature": "number of publications",
+          "value": 8.0,
+          "shap": -0.5171050392375314
+        },
+        {
+          "feature": "number of projects",
+          "value": 0.0,
+          "shap": 0.4167783014740066
+        },
+        {
+          "feature": "topic “semantic web”",
+          "value": 0.0,
+          "shap": 0.2501065707264538
+        },
+        {
+          "feature": "co-authored with Wolffried Stucky",
+          "value": 0.0,
+          "shap": -0.24790113075649442
+        },
+        {
+          "feature": "topic “evolutionary algorithms”",
+          "value": 0.0,
+          "shap": 0.24018743692140823
+        },
+        {
+          "feature": "topic “Peer-to-Peer”",
+          "value": 0.0,
+          "shap": 0.22322039895562745
+        },
+        {
+          "feature": "co-authored with Andreas Oberweis",
+          "value": 0.0,
+          "shap": -0.21817641733255536
+        },
+        {
+          "feature": "topic “Ontology Engineering”",
+          "value": 0.0,
+          "shap": 0.21542470431391963
+        }
+      ],
+      "family_totals": {
+        "coauthor": -0.3376220067423333,
+        "contact": 0.0327828519227716,
+        "profile": -0.03666305708595711,
+        "project": 0.0,
+        "topic": 1.1151040601118904
+      }
+    },
+    {
+      "name": "Martin Middendorf",
+      "true_group": "Efficient Algorithms",
+      "tree_prediction": "Efficient Algorithms",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: yes",
+        "co-authored with Rebecca Bulander: no",
+        "→ Efficient Algorithms"
+      ],
+      "lightgbm_prediction": "Efficient Algorithms",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.003648850483832082,
+        "Efficient Algorithms": 0.9944811889136288,
+        "Knowledge Management": 0.001426723733939865,
+        "Complexity Management": 0.000443236868599358
+      },
+      "top_reasons": [
+        {
+          "feature": "co-authored with Hartmut Schmeck",
+          "value": 1.0,
+          "shap": 1.7903400157789808
+        },
+        {
+          "feature": "co-authored with Jürgen Branke",
+          "value": 1.0,
+          "shap": 1.7561774299600095
+        },
+        {
+          "feature": "topic “nature-inspired algorithms”",
+          "value": 1.0,
+          "shap": 1.1044504991291855
+        },
+        {
+          "feature": "topic “evolutionary algorithms”",
+          "value": 3.0,
+          "shap": 0.7633120350302969
+        },
+        {
+          "feature": "number of publications",
+          "value": 15.0,
+          "shap": -0.7456534726338229
+        },
+        {
+          "feature": "co-authored with Daniel Merkle",
+          "value": 1.0,
+          "shap": -0.3942476200073999
+        },
+        {
+          "feature": "topic “computer architecture”",
+          "value": 2.0,
+          "shap": 0.39128979105987977
+        },
+        {
+          "feature": "topic “efficient algorithms”",
+          "value": 1.0,
+          "shap": 0.16761722711722538
+        }
+      ],
+      "family_totals": {
+        "coauthor": 3.131108324355861,
+        "contact": 0.015071899623427715,
+        "profile": -0.8108152240260811,
+        "project": 0.0,
+        "topic": 2.5053327331592814
+      }
+    },
+    {
+      "name": "Michaela Fischer",
+      "true_group": "Business Information and Communication Systems",
+      "tree_prediction": "Business Information and Communication Systems",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: no",
+        "topic “computational finance”: no",
+        "co-authored with Rudi Studer: no",
+        "topic “evolutionary algorithms”: no",
+        "→ Business Information and Communication Systems"
+      ],
+      "lightgbm_prediction": "Business Information and Communication Systems",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.9892008250071308,
+        "Efficient Algorithms": 0.004880435350670798,
+        "Knowledge Management": 0.005179861880055755,
+        "Complexity Management": 0.0007388777621426595
+      },
+      "top_reasons": [
+        {
+          "feature": "number of projects",
+          "value": 0.0,
+          "shap": 0.7176594529351062
+        },
+        {
+          "feature": "contact detail phone_block=072160845xx",
+          "value": 1.0,
+          "shap": 0.707979668014203
+        },
+        {
+          "feature": "has a photo",
+          "value": 1.0,
+          "shap": -0.27472012589927697
+        },
+        {
+          "feature": "topic “Peer-to-Peer”",
+          "value": 0.0,
+          "shap": 0.26952806919364014
+        },
+        {
+          "feature": "topic “evolutionary algorithms”",
+          "value": 0.0,
+          "shap": 0.24498260342147585
+        },
+        {
+          "feature": "topic “semantic web”",
+          "value": 0.0,
+          "shap": 0.23445445461930564
+        },
+        {
+          "feature": "has a phone number",
+          "value": 1.0,
+          "shap": 0.22990350546534097
+        },
+        {
+          "feature": "co-authored with Andreas Oberweis",
+          "value": 0.0,
+          "shap": -0.2252039447332489
+        }
+      ],
+      "family_totals": {
+        "coauthor": -0.2807766020794443,
+        "contact": 0.8947907225451316,
+        "profile": 0.817328119160372,
+        "project": 0.0,
+        "topic": 1.2521304828982187
+      }
+    },
+    {
+      "name": "Nenad Stojanovic",
+      "true_group": "Knowledge Management",
+      "tree_prediction": "Knowledge Management",
+      "tree_path": [
+        "topic “semantic web”: 20 (> 0.5)",
+        "topic “workflow management”: 0 (≤ 1)",
+        "→ Knowledge Management"
+      ],
+      "lightgbm_prediction": "Knowledge Management",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.0014641986616630576,
+        "Efficient Algorithms": 0.00025805492024582693,
+        "Knowledge Management": 0.9981386332624661,
+        "Complexity Management": 0.00013911315562492048
+      },
+      "top_reasons": [
+        {
+          "feature": "topic “semantic web”",
+          "value": 20.0,
+          "shap": 2.793581055070518
+        },
+        {
+          "feature": "co-authored with Rudi Studer",
+          "value": 1.0,
+          "shap": 1.6291862492645628
+        },
+        {
+          "feature": "topic “Peer-to-Peer”",
+          "value": 2.0,
+          "shap": 0.5904041112638103
+        },
+        {
+          "feature": "co-authored with André Schaefer",
+          "value": 1.0,
+          "shap": -0.32322511632401346
+        },
+        {
+          "feature": "number of publications",
+          "value": 52.0,
+          "shap": 0.18569352970083344
+        },
+        {
+          "feature": "co-authored with Daniel Ried",
+          "value": 0.0,
+          "shap": 0.14593002309089054
+        },
+        {
+          "feature": "has a phone number",
+          "value": 1.0,
+          "shap": -0.08543948082619583
+        },
+        {
+          "feature": "has a photo",
+          "value": 1.0,
+          "shap": -0.0494122728799205
+        }
+      ],
+      "family_totals": {
+        "coauthor": 1.5023758478993194,
+        "contact": -0.018527093819071964,
+        "profile": 0.00036925234614124114,
+        "project": 0.0,
+        "topic": 3.39135067725371
+      }
+    },
+    {
+      "name": "Olivier Sandel",
+      "true_group": "Business Information and Communication Systems",
+      "tree_prediction": "Business Information and Communication Systems",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: no",
+        "topic “computational finance”: no",
+        "co-authored with Rudi Studer: no",
+        "topic “evolutionary algorithms”: no",
+        "→ Business Information and Communication Systems"
+      ],
+      "lightgbm_prediction": "Business Information and Communication Systems",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.9816197375399484,
+        "Efficient Algorithms": 0.008494452431161831,
+        "Knowledge Management": 0.006702630412078752,
+        "Complexity Management": 0.0031831796168110818
+      },
+      "top_reasons": [
+        {
+          "feature": "co-authored with Wolffried Stucky",
+          "value": 1.0,
+          "shap": 1.7172403010402604
+        },
+        {
+          "feature": "topic “Artificial Intelligence”",
+          "value": 1.0,
+          "shap": -0.727734857725835
+        },
+        {
+          "feature": "number of projects",
+          "value": 1.0,
+          "shap": -0.5200783635126859
+        },
+        {
+          "feature": "topic “office information systems”",
+          "value": 1.0,
+          "shap": 0.29855290156478576
+        },
+        {
+          "feature": "number of publications",
+          "value": 3.0,
+          "shap": -0.27990058653700167
+        },
+        {
+          "feature": "topic “Peer-to-Peer”",
+          "value": 0.0,
+          "shap": 0.2647846876054037
+        },
+        {
+          "feature": "co-authored with Andreas Oberweis",
+          "value": 0.0,
+          "shap": -0.25641752218473285
+        },
+        {
+          "feature": "topic “semantic web”",
+          "value": 0.0,
+          "shap": 0.24941014852640495
+        }
+      ],
+      "family_totals": {
+        "coauthor": 1.6375700886206495,
+        "contact": 0.0587823069102749,
+        "profile": -0.9160761162347095,
+        "project": 0.0,
+        "topic": 0.7269423586586877
+      }
+    },
+    {
+      "name": "Peter Bungert",
+      "true_group": "Efficient Algorithms",
+      "tree_prediction": "Efficient Algorithms",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: no",
+        "topic “computational finance”: no",
+        "co-authored with Rudi Studer: no",
+        "topic “evolutionary algorithms”: yes",
+        "→ Efficient Algorithms"
+      ],
+      "lightgbm_prediction": "Efficient Algorithms",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.0007600502811996896,
+        "Efficient Algorithms": 0.9948116828661439,
+        "Knowledge Management": 0.0013355695080624823,
+        "Complexity Management": 0.0030926973445940483
+      },
+      "top_reasons": [
+        {
+          "feature": "contact detail fax=0721693717",
+          "value": 1.0,
+          "shap": 2.077289150287394
+        },
+        {
+          "feature": "contact detail phone_block=072160839xx",
+          "value": 1.0,
+          "shap": 1.3325351301920885
+        },
+        {
+          "feature": "number of publications",
+          "value": 0.0,
+          "shap": 1.3275596780023888
+        },
+        {
+          "feature": "topic “nature-inspired algorithms”",
+          "value": 1.0,
+          "shap": 0.6661397777575637
+        },
+        {
+          "feature": "number of co-authors",
+          "value": 0.0,
+          "shap": 0.5403222983884575
+        },
+        {
+          "feature": "co-authored with Hartmut Schmeck",
+          "value": 0.0,
+          "shap": -0.3471591502445034
+        },
+        {
+          "feature": "has a phone number",
+          "value": 1.0,
+          "shap": -0.18007678861860688
+        },
+        {
+          "feature": "topic “evolutionary algorithms”",
+          "value": 1.0,
+          "shap": 0.15271591030170428
+        }
+      ],
+      "family_totals": {
+        "coauthor": -0.4813082105041766,
+        "contact": 3.4169088140589583,
+        "profile": 1.7502348998565194,
+        "project": 0.0,
+        "topic": 1.1320564836532778
+      }
+    },
+    {
+      "name": "Roland Schätzle",
+      "true_group": "Business Information and Communication Systems",
+      "tree_prediction": "Business Information and Communication Systems",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: no",
+        "topic “computational finance”: no",
+        "co-authored with Rudi Studer: no",
+        "topic “evolutionary algorithms”: no",
+        "→ Business Information and Communication Systems"
+      ],
+      "lightgbm_prediction": "Business Information and Communication Systems",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.6397275707542416,
+        "Efficient Algorithms": 0.02286986115051951,
+        "Knowledge Management": 0.00955291331139669,
+        "Complexity Management": 0.32784965478384215
+      },
+      "top_reasons": [
+        {
+          "feature": "number of projects",
+          "value": 0.0,
+          "shap": 0.576094018864682
+        },
+        {
+          "feature": "has a photo",
+          "value": 1.0,
+          "shap": -0.4530374133989289
+        },
+        {
+          "feature": "co-authored with Andreas Oberweis",
+          "value": 0.0,
+          "shap": -0.2439395757241657
+        },
+        {
+          "feature": "co-authored with Wolffried Stucky",
+          "value": 0.0,
+          "shap": -0.23805861702567988
+        },
+        {
+          "feature": "topic “semantic web”",
+          "value": 0.0,
+          "shap": 0.23445445461930564
+        },
+        {
+          "feature": "topic “evolutionary algorithms”",
+          "value": 0.0,
+          "shap": 0.22932927201955566
+        },
+        {
+          "feature": "topic “Peer-to-Peer”",
+          "value": 0.0,
+          "shap": 0.21986691297798763
+        },
+        {
+          "feature": "topic “Ontology Engineering”",
+          "value": 0.0,
+          "shap": 0.19283902176932943
+        }
+      ],
+      "family_totals": {
+        "coauthor": -0.3850976406485933,
+        "contact": 0.060047403481382905,
+        "profile": -0.03327775991066202,
+        "project": 0.0,
+        "topic": 1.0883234598343559
+      }
+    },
+    {
+      "name": "Rudi Studer",
+      "true_group": "Knowledge Management",
+      "tree_prediction": "Knowledge Management",
+      "tree_path": [
+        "topic “semantic web”: 76 (> 0.5)",
+        "topic “workflow management”: 0 (≤ 1)",
+        "→ Knowledge Management"
+      ],
+      "lightgbm_prediction": "Knowledge Management",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.0030908888753543337,
+        "Efficient Algorithms": 0.000557310875653222,
+        "Knowledge Management": 0.9957727218001589,
+        "Complexity Management": 0.0005790784488335176
+      },
+      "top_reasons": [
+        {
+          "feature": "topic “semantic web”",
+          "value": 76.0,
+          "shap": 2.235470251387046
+        },
+        {
+          "feature": "contact detail fax=07216086580",
+          "value": 1.0,
+          "shap": 1.9736903110871293
+        },
+        {
+          "feature": "topic “Peer-to-Peer”",
+          "value": 1.0,
+          "shap": 0.49425063337442043
+        },
+        {
+          "feature": "co-authored with André Schaefer",
+          "value": 1.0,
+          "shap": -0.32322511632401346
+        },
+        {
+          "feature": "topic “business process management”",
+          "value": 1.0,
+          "shap": -0.27588429476244375
+        },
+        {
+          "feature": "co-authored with Daniel Ried",
+          "value": 0.0,
+          "shap": 0.14593002309089054
+        },
+        {
+          "feature": "co-authored with Rudi Studer",
+          "value": 0.0,
+          "shap": -0.1441266990179351
+        },
+        {
+          "feature": "has a photo",
+          "value": 1.0,
+          "shap": -0.10132854193851479
+        }
+      ],
+      "family_totals": {
+        "coauthor": -0.27692884902996806,
+        "contact": 1.9736903110871293,
+        "profile": -0.08411368361662772,
+        "project": 0.0,
+        "topic": 2.4362741029054455
+      }
+    },
+    {
+      "name": "Saartje Brockmans",
+      "true_group": "Knowledge Management",
+      "tree_prediction": "Knowledge Management",
+      "tree_path": [
+        "topic “semantic web”: 4 (> 0.5)",
+        "topic “workflow management”: 0 (≤ 1)",
+        "→ Knowledge Management"
+      ],
+      "lightgbm_prediction": "Knowledge Management",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.0068383373748533505,
+        "Efficient Algorithms": 0.0002180146413704539,
+        "Knowledge Management": 0.9928384397888722,
+        "Complexity Management": 0.00010520819490401126
+      },
+      "top_reasons": [
+        {
+          "feature": "contact detail fax=07216086580",
+          "value": 1.0,
+          "shap": 1.8180564238237062
+        },
+        {
+          "feature": "topic “semantic web”",
+          "value": 4.0,
+          "shap": 1.7220545997939571
+        },
+        {
+          "feature": "co-authored with Rudi Studer",
+          "value": 1.0,
+          "shap": 1.4379531732017377
+        },
+        {
+          "feature": "topic “business process management”",
+          "value": 1.0,
+          "shap": -0.27388338874846285
+        },
+        {
+          "feature": "co-authored with Daniel Ried",
+          "value": 0.0,
+          "shap": 0.14593002309089054
+        },
+        {
+          "feature": "number of publications",
+          "value": 9.0,
+          "shap": 0.14456893187381295
+        },
+        {
+          "feature": "number of co-authors",
+          "value": 16.0,
+          "shap": -0.06103958542622575
+        },
+        {
+          "feature": "has a phone number",
+          "value": 1.0,
+          "shap": -0.05556258384567929
+        }
+      ],
+      "family_totals": {
+        "coauthor": 1.6633564827816512,
+        "contact": 1.8180564238237062,
+        "profile": 0.05299021926295239,
+        "project": 0.0,
+        "topic": 1.4177798540209965
+      }
+    },
+    {
+      "name": "Sabine Just-Höpfinger",
+      "true_group": "Business Information and Communication Systems",
+      "tree_prediction": "Business Information and Communication Systems",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: no",
+        "topic “computational finance”: no",
+        "co-authored with Rudi Studer: no",
+        "topic “evolutionary algorithms”: no",
+        "→ Business Information and Communication Systems"
+      ],
+      "lightgbm_prediction": "Business Information and Communication Systems",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.9184643878332932,
+        "Efficient Algorithms": 0.07540835730819574,
+        "Knowledge Management": 0.004999319816072427,
+        "Complexity Management": 0.0011279350424386854
+      },
+      "top_reasons": [
+        {
+          "feature": "number of projects",
+          "value": 0.0,
+          "shap": 0.5151571160244409
+        },
+        {
+          "feature": "number of publications",
+          "value": 0.0,
+          "shap": 0.3401900932473287
+        },
+        {
+          "feature": "has a photo",
+          "value": 0.0,
+          "shap": 0.30827056134817427
+        },
+        {
+          "feature": "topic “evolutionary algorithms”",
+          "value": 0.0,
+          "shap": 0.25427216492138915
+        },
+        {
+          "feature": "topic “Ontology Engineering”",
+          "value": 0.0,
+          "shap": 0.24929078676726424
+        },
+        {
+          "feature": "topic “Peer-to-Peer”",
+          "value": 0.0,
+          "shap": 0.24744113167981097
+        },
+        {
+          "feature": "topic “semantic web”",
+          "value": 0.0,
+          "shap": 0.23445445461930564
+        },
+        {
+          "feature": "co-authored with Wolffried Stucky",
+          "value": 0.0,
+          "shap": -0.20866235369468292
+        }
+      ],
+      "family_totals": {
+        "coauthor": -0.2650086374528968,
+        "contact": 0.0897345170138688,
+        "profile": 0.9988239583655449,
+        "project": 0.0,
+        "topic": 1.2329967541514304
+      }
+    },
+    {
+      "name": "Sebastian Blohm",
+      "true_group": "Knowledge Management",
+      "tree_prediction": "Knowledge Management",
+      "tree_path": [
+        "topic “semantic web”: 3 (> 0.5)",
+        "topic “workflow management”: 0 (≤ 1)",
+        "→ Knowledge Management"
+      ],
+      "lightgbm_prediction": "Knowledge Management",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.0007032108394298684,
+        "Efficient Algorithms": 0.00028639154227534614,
+        "Knowledge Management": 0.9989460204687083,
+        "Complexity Management": 6.43771495865106e-05
+      },
+      "top_reasons": [
+        {
+          "feature": "topic “semantic web”",
+          "value": 3.0,
+          "shap": 3.131160036061437
+        },
+        {
+          "feature": "contact detail fax=07216086580",
+          "value": 1.0,
+          "shap": 2.1998520455883934
+        },
+        {
+          "feature": "number of publications",
+          "value": 3.0,
+          "shap": 0.15240508763235072
+        },
+        {
+          "feature": "co-authored with Daniel Ried",
+          "value": 0.0,
+          "shap": 0.14548451681548955
+        },
+        {
+          "feature": "co-authored with Rudi Studer",
+          "value": 0.0,
+          "shap": -0.11494051284074704
+        },
+        {
+          "feature": "number of co-authors",
+          "value": 7.0,
+          "shap": -0.09440745175939864
+        },
+        {
+          "feature": "has a phone number",
+          "value": 1.0,
+          "shap": -0.06466671395868494
+        },
+        {
+          "feature": "has a fax number",
+          "value": 1.0,
+          "shap": 0.05765034763783815
+        }
+      ],
+      "family_totals": {
+        "coauthor": 0.08929155848320657,
+        "contact": 2.1998520455883934,
+        "profile": 0.027994620760291106,
+        "project": 0.0,
+        "topic": 3.132007232488872
+      }
+    },
+    {
+      "name": "Siegfried Handschuh",
+      "true_group": "Knowledge Management",
+      "tree_prediction": "Knowledge Management",
+      "tree_path": [
+        "topic “semantic web”: 13 (> 0.5)",
+        "topic “workflow management”: 0 (≤ 1)",
+        "→ Knowledge Management"
+      ],
+      "lightgbm_prediction": "Knowledge Management",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.0003968795301924397,
+        "Efficient Algorithms": 0.000213357037042165,
+        "Knowledge Management": 0.9931121527652002,
+        "Complexity Management": 0.006277610667565176
+      },
+      "top_reasons": [
+        {
+          "feature": "topic “semantic web”",
+          "value": 13.0,
+          "shap": 3.0020069838964916
+        },
+        {
+          "feature": "co-authored with Rudi Studer",
+          "value": 1.0,
+          "shap": 1.7856127562645272
+        },
+        {
+          "feature": "number of publications",
+          "value": 39.0,
+          "shap": 0.3375801546606042
+        },
+        {
+          "feature": "has a phone number",
+          "value": 0.0,
+          "shap": 0.18383125241534784
+        },
+        {
+          "feature": "co-authored with Daniel Ried",
+          "value": 0.0,
+          "shap": 0.14548451681548955
+        },
+        {
+          "feature": "number of co-authors",
+          "value": 78.0,
+          "shap": -0.06961170366632513
+        },
+        {
+          "feature": "co-authored with André Schaefer",
+          "value": 0.0,
+          "shap": 0.032322511632401345
+        },
+        {
+          "feature": "co-authored with Marco Mevius",
+          "value": 0.0,
+          "shap": 0.032112387596868505
+        }
+      ],
+      "family_totals": {
+        "coauthor": 1.9939107041968138,
+        "contact": -0.0188054166464891,
+        "profile": 0.42301454868563027,
+        "project": 0.0,
+        "topic": 2.9868151444354356
+      }
+    },
+    {
+      "name": "Steffen Lamparter",
+      "true_group": "Knowledge Management",
+      "tree_prediction": "Knowledge Management",
+      "tree_path": [
+        "topic “semantic web”: yes",
+        "topic “workflow management”: 0 (≤ 1)",
+        "→ Knowledge Management"
+      ],
+      "lightgbm_prediction": "Knowledge Management",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.000519752823864352,
+        "Efficient Algorithms": 0.00013508966383611522,
+        "Knowledge Management": 0.9992170008385961,
+        "Complexity Management": 0.00012815667370350575
+      },
+      "top_reasons": [
+        {
+          "feature": "topic “semantic web”",
+          "value": 1.0,
+          "shap": 3.1650327302725882
+        },
+        {
+          "feature": "co-authored with Rudi Studer",
+          "value": 1.0,
+          "shap": 1.6985830033448186
+        },
+        {
+          "feature": "topic “Grid Computing”",
+          "value": 1.0,
+          "shap": 0.32445753375407654
+        },
+        {
+          "feature": "number of publications",
+          "value": 18.0,
+          "shap": 0.17358649119670955
+        },
+        {
+          "feature": "co-authored with Daniel Ried",
+          "value": 0.0,
+          "shap": 0.14548451681548955
+        },
+        {
+          "feature": "has a phone number",
+          "value": 1.0,
+          "shap": -0.12605302675893065
+        },
+        {
+          "feature": "number of co-authors",
+          "value": 22.0,
+          "shap": -0.0693832538377538
+        },
+        {
+          "feature": "has a fax number",
+          "value": 1.0,
+          "shap": 0.0416912992164572
+        }
+      ],
+      "family_totals": {
+        "coauthor": 1.9068809512771052,
+        "contact": -0.019033913817347172,
+        "profile": 0.002443260756749388,
+        "project": 0.0,
+        "topic": 3.494644682454878
+      }
+    },
+    {
+      "name": "Stephan Chalup",
+      "true_group": "Complexity Management",
+      "tree_prediction": "Business Information and Communication Systems",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: no",
+        "topic “computational finance”: no",
+        "co-authored with Rudi Studer: no",
+        "topic “evolutionary algorithms”: no",
+        "→ Business Information and Communication Systems"
+      ],
+      "lightgbm_prediction": "Business Information and Communication Systems",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.9384274319383333,
+        "Efficient Algorithms": 0.02499092445920612,
+        "Knowledge Management": 0.01986289066292653,
+        "Complexity Management": 0.016718752939534037
+      },
+      "top_reasons": [
+        {
+          "feature": "number of publications",
+          "value": 2.0,
+          "shap": -0.7079644044366382
+        },
+        {
+          "feature": "number of projects",
+          "value": 0.0,
+          "shap": 0.5026317521729738
+        },
+        {
+          "feature": "co-authored with Detlef Seese",
+          "value": 1.0,
+          "shap": -0.40305480116305054
+        },
+        {
+          "feature": "has a phone number",
+          "value": 1.0,
+          "shap": 0.24828354111440168
+        },
+        {
+          "feature": "co-authored with Wolffried Stucky",
+          "value": 0.0,
+          "shap": -0.24253968980181564
+        },
+        {
+          "feature": "topic “Peer-to-Peer”",
+          "value": 0.0,
+          "shap": 0.23221678564168424
+        },
+        {
+          "feature": "topic “Ontology Engineering”",
+          "value": 0.0,
+          "shap": 0.21542470431391963
+        },
+        {
+          "feature": "co-authored with Andreas Oberweis",
+          "value": 0.0,
+          "shap": -0.21236975713673856
+        }
+      ],
+      "family_totals": {
+        "coauthor": -0.77348976583037,
+        "contact": 0.015230450028772394,
+        "profile": 0.16811433620327962,
+        "project": 0.0,
+        "topic": 0.9660119945553792
+      }
+    },
+    {
+      "name": "Thomas Mochel",
+      "true_group": "Business Information and Communication Systems",
+      "tree_prediction": "Business Information and Communication Systems",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: no",
+        "topic “computational finance”: no",
+        "co-authored with Rudi Studer: no",
+        "topic “evolutionary algorithms”: no",
+        "→ Business Information and Communication Systems"
+      ],
+      "lightgbm_prediction": "Business Information and Communication Systems",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.9184643878332932,
+        "Efficient Algorithms": 0.07540835730819574,
+        "Knowledge Management": 0.004999319816072427,
+        "Complexity Management": 0.0011279350424386854
+      },
+      "top_reasons": [
+        {
+          "feature": "number of projects",
+          "value": 0.0,
+          "shap": 0.5151571160244409
+        },
+        {
+          "feature": "number of publications",
+          "value": 0.0,
+          "shap": 0.3401900932473287
+        },
+        {
+          "feature": "has a photo",
+          "value": 0.0,
+          "shap": 0.30827056134817427
+        },
+        {
+          "feature": "topic “evolutionary algorithms”",
+          "value": 0.0,
+          "shap": 0.25427216492138915
+        },
+        {
+          "feature": "topic “Ontology Engineering”",
+          "value": 0.0,
+          "shap": 0.24929078676726424
+        },
+        {
+          "feature": "topic “Peer-to-Peer”",
+          "value": 0.0,
+          "shap": 0.24744113167981097
+        },
+        {
+          "feature": "topic “semantic web”",
+          "value": 0.0,
+          "shap": 0.23445445461930564
+        },
+        {
+          "feature": "co-authored with Wolffried Stucky",
+          "value": 0.0,
+          "shap": -0.20866235369468292
+        }
+      ],
+      "family_totals": {
+        "coauthor": -0.2650086374528968,
+        "contact": 0.0897345170138688,
+        "profile": 0.9988239583655449,
+        "project": 0.0,
+        "topic": 1.2329967541514304
+      }
+    },
+    {
+      "name": "Uwe Kersten",
+      "true_group": "Business Information and Communication Systems",
+      "tree_prediction": "Business Information and Communication Systems",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: no",
+        "topic “computational finance”: no",
+        "co-authored with Rudi Studer: no",
+        "topic “evolutionary algorithms”: no",
+        "→ Business Information and Communication Systems"
+      ],
+      "lightgbm_prediction": "Business Information and Communication Systems",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.9184643878332932,
+        "Efficient Algorithms": 0.07540835730819574,
+        "Knowledge Management": 0.004999319816072427,
+        "Complexity Management": 0.0011279350424386854
+      },
+      "top_reasons": [
+        {
+          "feature": "number of projects",
+          "value": 0.0,
+          "shap": 0.5151571160244409
+        },
+        {
+          "feature": "number of publications",
+          "value": 0.0,
+          "shap": 0.3401900932473287
+        },
+        {
+          "feature": "has a photo",
+          "value": 0.0,
+          "shap": 0.30827056134817427
+        },
+        {
+          "feature": "topic “evolutionary algorithms”",
+          "value": 0.0,
+          "shap": 0.25427216492138915
+        },
+        {
+          "feature": "topic “Ontology Engineering”",
+          "value": 0.0,
+          "shap": 0.24929078676726424
+        },
+        {
+          "feature": "topic “Peer-to-Peer”",
+          "value": 0.0,
+          "shap": 0.24744113167981097
+        },
+        {
+          "feature": "topic “semantic web”",
+          "value": 0.0,
+          "shap": 0.23445445461930564
+        },
+        {
+          "feature": "co-authored with Wolffried Stucky",
+          "value": 0.0,
+          "shap": -0.20866235369468292
+        }
+      ],
+      "family_totals": {
+        "coauthor": -0.2650086374528968,
+        "contact": 0.0897345170138688,
+        "profile": 0.9988239583655449,
+        "project": 0.0,
+        "topic": 1.2329967541514304
+      }
+    },
+    {
+      "name": "Yu Li",
+      "true_group": "Business Information and Communication Systems",
+      "tree_prediction": "Business Information and Communication Systems",
+      "tree_path": [
+        "topic “semantic web”: no",
+        "co-authored with Hartmut Schmeck: no",
+        "topic “computational finance”: no",
+        "co-authored with Rudi Studer: no",
+        "topic “evolutionary algorithms”: no",
+        "→ Business Information and Communication Systems"
+      ],
+      "lightgbm_prediction": "Business Information and Communication Systems",
+      "probabilities": {
+        "Business Information and Communication Systems": 0.9991155539013917,
+        "Efficient Algorithms": 0.0003790533180050267,
+        "Knowledge Management": 0.0003854358024649276,
+        "Complexity Management": 0.00011995697813828645
+      },
+      "top_reasons": [
+        {
+          "feature": "co-authored with Andreas Oberweis",
+          "value": 1.0,
+          "shap": 1.100261987718512
+        },
+        {
+          "feature": "contact detail phone_block=072160845xx",
+          "value": 1.0,
+          "shap": 0.7707082671006011
+        },
+        {
+          "feature": "topic “Peer-to-Peer”",
+          "value": 0.0,
+          "shap": 0.3190397629867257
+        },
+        {
+          "feature": "topic “evolutionary algorithms”",
+          "value": 0.0,
+          "shap": 0.28716566576157765
+        },
+        {
+          "feature": "topic “Ontology Engineering”",
+          "value": 0.0,
+          "shap": 0.28651822963421103
+        },
+        {
+          "feature": "number of projects",
+          "value": 0.0,
+          "shap": 0.2767256397626573
+        },
+        {
+          "feature": "has a phone number",
+          "value": 1.0,
+          "shap": 0.24886238912402003
+        },
+        {
+          "feature": "topic “office information systems”",
+          "value": 1.0,
+          "shap": 0.21233109136646036
+        }
+      ],
+      "family_totals": {
+        "coauthor": 1.2807362757886955,
+        "contact": 0.9183046647592319,
+        "profile": 0.35054785751185386,
+        "project": 0.0,
+        "topic": 1.8311769592978708
+      }
+    }
+  ]
+}

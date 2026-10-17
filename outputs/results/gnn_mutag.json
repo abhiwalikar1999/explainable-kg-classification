@@ -1,0 +1,30 @@
+{
+  "model": "R-GCN, 2 layers, 16 hidden, Adam 0.01, 50 epochs, featureless, Settings(num_bases=30, weight_decay=0.0005)",
+  "variants": {
+    "standard": {
+      "num_edges": 74227,
+      "num_nodes": 23644,
+      "test_accuracy_mean": 0.7088235294117647,
+      "test_accuracy_std": 0.03275155507547071,
+      "test_accuracy_per_seed": [
+        0.7352941176470589,
+        0.7352941176470589,
+        0.7205882352941176,
+        0.6764705882352942,
+        0.7058823529411765,
+        0.7647058823529411,
+        0.6764705882352942,
+        0.6764705882352942,
+        0.7352941176470589,
+        0.6617647058823529
+      ],
+      "test_accuracy_median_wilson95": [
+        0.5889349573627328,
+        0.8008113734539529
+      ],
+      "cv_accuracy_mean": 0.7147058823529413,
+      "cv_accuracy_std": 0.04011229910878191,
+      "cv_folds": 5
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "majority_baseline_test_accuracy": 0.4166666666666667,
+  "models": {
+    "gradient_boosting": {
+      "test_accuracy": 0.8611111111111112,
+      "test_correct": "31/36",
+      "test_accuracy_wilson95": [
+        0.7134014871960681,
+        0.9391827463688489
+      ],
+      "cv_accuracy_mean": 0.7594708994708996,
+      "cv_accuracy_std": 0.054655188302242926,
+      "cv_folds": 15
+    },
+    "decision_tree": {
+      "test_accuracy": 0.6666666666666666,
+      "test_correct": "24/36",
+      "test_accuracy_wilson95": [
+        0.5033369709296683,
+        0.7978557522541395
+      ],
+      "cv_accuracy_mean": 0.6383597883597881,
+      "cv_accuracy_std": 0.03973189170974444,
+      "cv_folds": 15
+    }
+  },
+  "explanations": {
+    "GB test accuracy": 0.861,
+    "DT test accuracy": 0.667,
+    "GB-DT agreement on test (DT fit on true labels)": 0.75,
+    "Surrogate fidelity on test (DT fit on GB predictions)": 0.833,
+    "Spearman SHAP vs Gini (all features)": 0.569,
+    "Spearman SHAP vs Gini (union of top-20)": 0.467,
+    "Top-20 Jaccard SHAP vs Gini": 0.481,
+    "Spearman SHAP vs Permutation (all features)": 0.311,
+    "Spearman SHAP vs Permutation (union of top-20)": 0.513,
+    "Top-20 Jaccard SHAP vs Permutation": 0.333,
+    "Spearman Gini vs Permutation (all features)": 0.196,
+    "Spearman Gini vs Permutation (union of top-20)": 0.252,
+    "Top-20 Jaccard Gini vs Permutation": 0.212
+  },
+  "permutation_importance_nonzero_features": 15
+}

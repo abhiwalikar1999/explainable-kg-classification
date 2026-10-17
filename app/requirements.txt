@@ -1,0 +1,7 @@
+# Streamlit Community Cloud installs this (it looks next to the entrypoint
+# first). The demo only reads precomputed explanations, so it needs no ML
+# libraries. Same pins as requirements.txt / requirements-demo.txt (a test
+# checks this).
+streamlit==1.66.0
+pandas==3.0.6
+numpy==2.4.4

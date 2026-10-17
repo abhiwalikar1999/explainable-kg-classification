@@ -1,0 +1,22 @@
+|--- topic:semantic web <= 0.50
+|   |--- coauthor:Hartmut Schmeck <= 0.50
+|   |   |--- topic:computational finance <= 0.50
+|   |   |   |--- coauthor:Rudi Studer <= 0.50
+|   |   |   |   |--- topic:evolutionary algorithms <= 0.50
+|   |   |   |   |   |--- class: Business Information and Communication Systems
+|   |   |   |   |--- topic:evolutionary algorithms >  0.50
+|   |   |   |   |   |--- class: Efficient Algorithms
+|   |   |   |--- coauthor:Rudi Studer >  0.50
+|   |   |   |   |--- class: Knowledge Management
+|   |   |--- topic:computational finance >  0.50
+|   |   |   |--- class: Complexity Management
+|   |--- coauthor:Hartmut Schmeck >  0.50
+|   |   |--- coauthor:Rebecca Bulander <= 0.50
+|   |   |   |--- class: Efficient Algorithms
+|   |   |--- coauthor:Rebecca Bulander >  0.50
+|   |   |   |--- class: Business Information and Communication Systems
+|--- topic:semantic web >  0.50
+|   |--- topic:workflow management <= 1.00
+|   |   |--- class: Knowledge Management
+|   |--- topic:workflow management >  1.00
+|   |   |--- class: Business Information and Communication Systems
